@@ -77,7 +77,6 @@ public class ChatServer {
                     String message = (String) sInput.readObject();
                     // Implement a protocol for disconnection, message equals "EXIT"
                     if (message.equalsIgnoreCase("EXIT")) {
-                        broadcast(username + " has left the building", id);
                         System.out.println(username + " disconnected with a EXIT message.");
                         keepGoing = false;
                     } else {
