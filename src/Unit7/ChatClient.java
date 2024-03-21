@@ -29,6 +29,7 @@ public class ChatClient {
                     System.out.println("Server has closed the connection: " + e);
                     break;
                 } catch (ClassNotFoundException e2) {
+                   break;
                 }
             }
         }
